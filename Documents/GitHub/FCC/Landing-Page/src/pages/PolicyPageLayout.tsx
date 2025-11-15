@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from "../components/ui/button";
-import { TypographyH1, TypographyLead } from "../components/ui/typography";
+import { PageShell } from "../components/layout/PageShell";
 
 interface PolicyPageLayoutProps {
   title: string;
@@ -20,35 +19,27 @@ export const PolicyPageLayout = ({
   heroCtaHref = "/",
 }: PolicyPageLayoutProps) => {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(37,_99,_235,_0.25),_transparent_55%)]" />
-      <header className="px-6 py-12 lg:px-12">
-        <div className="mx-auto max-w-5xl space-y-6 text-center">
-          <div className="text-xs uppercase tracking-[0.4em] text-blue-300/80">{eyebrow}</div>
-          <TypographyH1 className="text-3xl sm:text-4xl lg:text-5xl">{title}</TypographyH1>
-          <TypographyLead className="text-base text-slate-300">{subtitle}</TypographyLead>
-          <div className="pt-4">
-            <Button
-              size="lg"
-              onClick={() => {
-                if (typeof window !== "undefined") {
-                  window.location.href = heroCtaHref;
-                }
-              }}
+    <PageShell>
+      <section className="border-b border-fcc-border bg-fcc-black">
+        <div className="mx-auto max-w-4xl px-4 py-12 text-center sm:px-6 lg:px-8">
+          <div className="text-[11px] uppercase tracking-[0.3em] text-fcc-accent">{eyebrow}</div>
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-fcc-cream sm:text-4xl lg:text-5xl">{title}</h1>
+          <p className="mx-auto mt-4 max-w-3xl text-sm text-fcc-muted">{subtitle}</p>
+          <div className="mt-6 flex justify-center">
+            <a
+              href={heroCtaHref}
+              className="inline-flex border border-fcc-border bg-fcc-black px-4 py-2 text-xs font-medium uppercase tracking-[0.18em] text-fcc-cream transition hover:border-fcc-accent hover:text-fcc-accent"
             >
               {heroCtaLabel}
-            </Button>
+            </a>
           </div>
         </div>
-      </header>
-      <main className="px-6 pb-24 lg:px-12">
-        <div className="mx-auto max-w-4xl rounded-2xl border border-slate-800 bg-slate-900/60 p-8 shadow-2xl shadow-blue-900/20 backdrop-blur">
+      </section>
+      <section className="px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl border border-fcc-border bg-fcc-black p-8 text-sm leading-relaxed text-fcc-muted shadow-fcc-accent">
           {children}
         </div>
-      </main>
-      <footer className="border-t border-slate-900/40 bg-slate-950/80 px-6 py-8 text-center text-sm text-slate-500 lg:px-12">
-        &copy; {new Date().getFullYear()} Financial Command Center AI. All rights reserved.
-      </footer>
-    </div>
+      </section>
+    </PageShell>
   );
 };

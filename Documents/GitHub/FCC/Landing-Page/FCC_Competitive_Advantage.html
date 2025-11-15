@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N8Z768CS');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FCC vs Ramp vs Airbase — Competitive Analysis</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2b;
+      --ink:#e8eefc;
+      --sub:#b8c3dd;
+      --accent:#7aa2ff;
+      --accent-2:#5bd6c4;
+      --line:rgba(255,255,255,0.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background: radial-gradient(1200px 800px at 20% -10%, #122044 0%, #0b1220 60%) fixed;
+      color: var(--ink);
+      line-height:1.65;
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:32px 20px 80px;}
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(to bottom, rgba(11,18,32,.85), rgba(11,18,32,.45));
+      border-bottom:1px solid var(--line);
+    }
+    .nav{max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:20px; padding:12px 20px;}
+    .nav h1{font-size:18px; margin:0; color:#fff}
+    .nav a{color:var(--sub); text-decoration:none; font-size:14px; padding:6px 10px; border-radius:8px}
+    .nav a:hover{background:rgba(255,255,255,.06); color:#fff}
+    section{margin-top:28px; border:1px solid var(--line); border-radius:18px;
+      background:linear-gradient(180deg, rgba(17,26,43,.65), rgba(17,26,43,.45)); padding:22px}
+    h2,h3{margin:0 0 10px;}
+    h2{font-size:26px}
+    h3{font-size:20px}
+    p{margin:10px 0}
+    table{width:100%; border-collapse:collapse; margin:10px 0; font-size:14px}
+    th, td{border-bottom:1px solid var(--line); padding:10px 8px; vertical-align:top}
+    th{color:#cfe0ff; text-align:left}
+    tr:last-child td{border-bottom:none}
+    .quote{border-left:3px solid var(--accent); padding-left:12px; color:#d8e5ff}
+    .muted{color:var(--sub)}
+    footer{text-align:center; color:var(--sub); margin-top:40px; font-size:13px}
+    .tag{display:inline-block; font-size:12px; padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+      color:var(--accent-2); background:rgba(91,214,196,.1); margin-bottom:10px}
+    .toc{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .toc a{font-size:13px; color:#cfe0ff; background:rgba(255,255,255,.04); padding:6px 10px; border-radius:999px; border:1px solid var(--line); text-decoration:none}
+    .toc a:hover{background:rgba(255,255,255,.07)}
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8Z768CS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <nav class="nav">
+      <h1>FCC vs Ramp vs Airbase <span style="color:var(--accent-2)">Competitive Analysis</span></h1>
+      <div style="flex:1"></div>
+      <a href="#overview">Overview</a>
+      <a href="#features">Features</a>
+      <a href="#why">Why FCC</a>
+      <a href="#advantages">Advantages</a>
+      <a href="#market">Market Outlook</a>
+    </nav>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <span class="tag">Financial Command Center AI</span>
+      <h2>Why Choose FCC Over Ramp, Airbase, and Other Finance Platforms</h2>
+      <p class="muted">Client-facing comparison that explains how FCC outperforms market leaders through AI-driven command, automation, and full data ownership.</p>
+      <div class="toc">
+        <a href="#overview">Overview</a>
+        <a href="#features">Feature Comparison</a>
+        <a href="#why">Why Choose FCC</a>
+        <a href="#advantages">Strategic Advantage</a>
+        <a href="#market">Market Outlook</a>
+      </div>
+    </section>
+
+    <section id="overview">
+      <h3>Overview</h3>
+      <table>
+        <thead><tr><th>Product</th><th>Core Focus</th><th>Target Market</th><th>Deployment</th></tr></thead>
+        <tbody>
+          <tr><td>Ramp</td><td>Corporate cards & spend automation</td><td>U.S. startups & mid-market</td><td>Cloud SaaS</td></tr>
+          <tr><td>Airbase</td><td>Spend management & approval workflows</td><td>Mid-enterprise finance teams</td><td>Cloud SaaS</td></tr>
+          <tr><td><strong>FCC</strong></td><td>Unified finance automation + AI CFO copilots</td><td>Tech-forward SMBs & agencies</td><td><strong>Self-hosted + Private</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="features">
+      <h3>Feature Comparison</h3>
+      <table>
+        <thead>
+          <tr><th>Category</th><th>Ramp</th><th>Airbase</th><th><strong>FCC</strong></th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Data Privacy</td><td>Stored on vendor servers</td><td>Stored on vendor servers</td><td><strong>Fully encrypted & locally stored</strong></td></tr>
+          <tr><td>AI Integration</td><td>Basic analytics</td><td>Rule-based workflows</td><td><strong>Conversational AI copilots + predictive insights</strong></td></tr>
+          <tr><td>Compliance & Audit</td><td>Limited</td><td>Medium</td><td><strong>Built-in compliance MCP & audit logs</strong></td></tr>
+          <tr><td>Banking Integrations</td><td>Stripe, QuickBooks</td><td>Xero, NetSuite</td><td><strong>Plaid, Stripe, Xero + ERP integrations</strong></td></tr>
+          <tr><td>Spend Control</td><td>Corporate cards only</td><td>Advanced routing</td><td><strong>Custom automations & policy thresholds</strong></td></tr>
+          <tr><td>Deployment Options</td><td>SaaS only</td><td>SaaS only</td><td><strong>Self-hosted, Dockerized, or cloud hybrid</strong></td></tr>
+          <tr><td>Customization</td><td>Low</td><td>Medium</td><td><strong>High — modular, open architecture</strong></td></tr>
+          <tr><td>User Interface</td><td>Web dashboard</td><td>Web dashboard</td><td><strong>Web + AI Chat + Claude Desktop MCP</strong></td></tr>
+          <tr><td>Pricing Model</td><td>Per-user subscription</td><td>Enterprise contracts</td><td><strong>Flexible — Pilot → OS → SaaS</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="why">
+      <h3>Why Choose FCC</h3>
+      <ol>
+        <li><strong>AI Command Layer:</strong> FCC doesn’t just display data — it <em>acts</em> on it. Through Claude or ChatGPT copilots, users can automate forecasting, detect anomalies, or generate reports instantly.</li>
+        <li><strong>Data Sovereignty:</strong> FCC is built for finance teams who can’t compromise on privacy — all credentials and transactions remain fully under client control.</li>
+        <li><strong>Unified Compliance:</strong> Instead of relying on third-party SaaS compliance, FCC integrates its own MCP audit layer — scanning Plaid, Stripe, and Xero transactions for risk and policy violations in real time.</li>
+        <li><strong>Extensible Ecosystem:</strong> Open API architecture lets clients plug in QuickBooks, ERP, payroll, or banking APIs — making FCC a true command layer over all financial systems.</li>
+        <li><strong>Future-Proofed AI Infrastructure:</strong> FCC’s modular AI stack supports Claude, OpenAI, or Gemini models — ensuring long-term adaptability to any LLM ecosystem.</li>
+      </ol>
+    </section>
+
+    <section id="advantages">
+      <h3>Strategic Advantages</h3>
+      <table>
+        <thead><tr><th>Dimension</th><th>Ramp</th><th>Airbase</th><th><strong>FCC Advantage</strong></th></tr></thead>
+        <tbody>
+          <tr><td>Data Ownership</td><td>Vendor-controlled</td><td>Vendor-controlled</td><td><strong>Client-controlled & encrypted</strong></td></tr>
+          <tr><td>AI Governance</td><td>Absent</td><td>Absent</td><td><strong>Integrated AI + compliance decisioning</strong></td></tr>
+          <tr><td>Integration Scope</td><td>Cards + Accounting</td><td>Approvals + Accounting</td><td><strong>Banking + Payments + Accounting + Compliance</strong></td></tr>
+          <tr><td>Scalability</td><td>SaaS-limited</td><td>SaaS-limited</td><td><strong>Modular microservice architecture</strong></td></tr>
+          <tr><td>White-Label Mode</td><td>No</td><td>No</td><td><strong>Yes — agencies & accountants can deploy FCC for clients</strong></td></tr>
+          <tr><td>Security</td><td>SOC2 vendor</td><td>SOC2 vendor</td><td><strong>AES-256 encryption, self-issued certificates</strong></td></tr>
+        </tbody>
+      </table>
+      <p class="quote">“FCC combines the automation of Ramp, the governance of Airbase, and the intelligence of an AI CFO — with total data ownership.”</p>
+    </section>
+
+    <section id="market">
+      <h3>Market Outlook & Why FCC Leads</h3>
+      <ul>
+        <li><strong>Beyond Spend:</strong> While Ramp and Airbase optimize spend, FCC orchestrates entire financial operations — from payments to compliance to forecasting.</li>
+        <li><strong>Global-Ready:</strong> Self-hosted architecture allows deployment in any geography (GDPR, APAC, MENA) without SaaS limitations.</li>
+        <li><strong>AI-Native:</strong> FCC was designed for the AI era — copilots, predictive alerts, and conversational intelligence are core features, not add-ons.</li>
+        <li><strong>Client Longevity:</strong> FCC adapts with future models and financial APIs, giving clients long-term control over their finance infrastructure.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Financial Command Center AI — The AI CFO for Secure, Scalable, and Self‑Hosted Financial Operations.</p>
+      <p class="muted">© Daywin Labs</p>
+    </footer>
+  </div>
+</body>
+</html>

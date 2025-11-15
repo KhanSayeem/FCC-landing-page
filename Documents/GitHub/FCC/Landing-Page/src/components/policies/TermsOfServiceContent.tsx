@@ -2,14 +2,14 @@ import React from "react";
 
 export const TermsOfServiceContent = () => {
   return (
-    <div className="space-y-6 text-slate-300">
-      <p className="text-sm text-slate-400">
+    <div className="space-y-6 text-fcc-muted">
+      <p className="text-sm text-fcc-gray">
         <strong>Last Updated:</strong>{" "}
         {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
       </p>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">1. Agreement to Terms</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">1. Agreement to Terms</h3>
         <p className="text-sm leading-relaxed">
           By accessing or using Financial Command Center AI ("FCC AI," "Platform," "Service"), you agree to be bound by these
           Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are
@@ -18,7 +18,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">2. Description of Service</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">2. Description of Service</h3>
         <p className="text-sm leading-relaxed">
           FCC AI provides AI-powered financial automation and insights through integration with third-party financial platforms
           including Stripe, Xero, and Plaid. Our service includes:
@@ -33,7 +33,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">3. Pilot Program Terms</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">3. Pilot Program Terms</h3>
         <p className="text-sm leading-relaxed">The current offering is a pilot program with the following conditions:</p>
         <ul className="ml-4 list-inside list-disc space-y-1 text-sm">
           <li>Limited to 5-10 participating businesses</li>
@@ -46,9 +46,9 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">4. User Responsibilities</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">4. User Responsibilities</h3>
         <div className="space-y-2 text-sm">
-          <p className="font-medium text-slate-200">4.1 Account Security</p>
+          <p className="font-medium text-fcc-cream">4.1 Account Security</p>
           <ul className="ml-4 list-inside list-disc space-y-1">
             <li>Maintain confidentiality of your account credentials</li>
             <li>Enable multi-factor authentication (MFA) when available</li>
@@ -56,7 +56,7 @@ export const TermsOfServiceContent = () => {
             <li>Be responsible for all activities under your account</li>
           </ul>
 
-          <p className="pt-3 font-medium text-slate-200">4.2 Data Accuracy</p>
+          <p className="pt-3 font-medium text-fcc-cream">4.2 Data Accuracy</p>
           <ul className="ml-4 list-inside list-disc space-y-1">
             <li>Ensure accuracy of financial data provided</li>
             <li>Maintain proper authorization for connected accounts</li>
@@ -64,7 +64,7 @@ export const TermsOfServiceContent = () => {
             <li>Keep integration credentials current and valid</li>
           </ul>
 
-          <p className="pt-3 font-medium text-slate-200">4.3 Acceptable Use</p>
+          <p className="pt-3 font-medium text-fcc-cream">4.3 Acceptable Use</p>
           <ul className="ml-4 list-inside list-disc space-y-1">
             <li>Use the service only for legitimate business purposes</li>
             <li>Comply with all applicable financial regulations</li>
@@ -75,7 +75,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">5. Data Ownership</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">5. Data Ownership</h3>
         <p className="text-sm leading-relaxed">
           You retain all rights to your financial data. FCC AI may process and analyze data solely for the purpose of providing
           the service. We do not claim ownership over your financial information.
@@ -83,7 +83,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">6. Payment & Subscription Terms</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">6. Payment & Subscription Terms</h3>
         <ul className="ml-4 list-inside list-disc space-y-1 text-sm">
           <li>Billing occurs monthly at the agreed pilot rate</li>
           <li>Payments are due within 10 days of invoice</li>
@@ -93,7 +93,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">7. Intellectual Property</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">7. Intellectual Property</h3>
         <p className="text-sm leading-relaxed">
           FCC AI retains ownership of all software, AI models, and intellectual property related to the platform. Customers
           receive a limited, non-exclusive, non-transferable license to use the service during the subscription term.
@@ -101,7 +101,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">8. Confidentiality</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">8. Confidentiality</h3>
         <p className="text-sm leading-relaxed">
           Both parties agree to keep confidential any proprietary information shared during the course of the engagement, including
           financial data, business processes, and future roadmap details.
@@ -109,7 +109,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">9. Service Availability</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">9. Service Availability</h3>
         <ul className="ml-4 list-inside list-disc space-y-1 text-sm">
           <li>FCC AI targets 99.5% uptime excluding scheduled maintenance</li>
           <li>Planned maintenance windows will be communicated in advance</li>
@@ -118,7 +118,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">10. Limitation of Liability</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">10. Limitation of Liability</h3>
         <p className="text-sm leading-relaxed">
           FCC AI is not liable for indirect, incidental, or consequential damages. Our aggregate liability is limited to the fees
           paid by you in the 3 months preceding the incident giving rise to the claim.
@@ -126,7 +126,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">11. Termination</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">11. Termination</h3>
         <p className="text-sm leading-relaxed">
           Either party may terminate the agreement with 30 days written notice. FCC AI may suspend or terminate access for
           violations of these terms or illegal activity.
@@ -134,7 +134,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">12. Governing Law</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">12. Governing Law</h3>
         <p className="text-sm leading-relaxed">
           These Terms are governed by and construed in accordance with the laws of the jurisdiction where FCC AI operates, without
           regard to conflict of law principles.
@@ -142,7 +142,7 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">13. Updates to Terms</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">13. Updates to Terms</h3>
         <p className="text-sm leading-relaxed">
           We may update these Terms of Service periodically. Continued use of the platform after changes become effective shall
           constitute your consent to the updated terms.
@@ -150,10 +150,10 @@ export const TermsOfServiceContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">14. Contact Information</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">14. Contact Information</h3>
         <p className="text-sm leading-relaxed">
           Questions about these Terms? Email us at{" "}
-          <a href="mailto:sayeem@daywinlabs.com" className="text-blue-400 hover:text-blue-300">
+          <a href="mailto:sayeem@daywinlabs.com" className="text-fcc-accent hover:text-fcc-accent">
             sayeem@daywinlabs.com
           </a>
           .

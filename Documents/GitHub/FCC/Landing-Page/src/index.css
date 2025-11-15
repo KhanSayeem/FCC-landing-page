@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-fcc-black text-fcc-cream antialiased;
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background-color: #CDDFFF;
+  color: #000000;
+}
+
+a {
+  @apply text-fcc-cream;
+}
+
+.video-hero-demo::-webkit-media-controls-mute-button,
+.video-hero-demo::-webkit-media-controls-volume-slider,
+.video-hero-demo::-webkit-media-controls-volume-control-container {
+  display: none !important;
+}
+
+.video-hero-demo::-moz-media-controls-volume-slider {
+  display: none !important;
+}

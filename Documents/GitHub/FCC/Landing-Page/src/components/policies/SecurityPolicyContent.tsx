@@ -3,14 +3,14 @@ import { AlertTriangle, Database, FileCheck, Key, Lock, Shield } from "lucide-re
 
 export const SecurityPolicyContent = () => {
   return (
-    <div className="space-y-6 text-slate-300">
-      <p className="text-sm text-slate-400">
+    <div className="space-y-6 text-fcc-muted">
+      <p className="text-sm text-fcc-gray">
         <strong>Last Updated:</strong>{" "}
         {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
       </p>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">Our Commitment to Security</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">Our Commitment to Security</h3>
         <p className="text-sm leading-relaxed">
           At Financial Command Center AI, we understand that your financial data is among your most sensitive information. We
           implement enterprise-grade security measures to protect your data at every layer of our infrastructure.
@@ -20,7 +20,7 @@ export const SecurityPolicyContent = () => {
       <section className="space-y-4">
         <PolicyItem icon={Lock} title="1. Data Encryption">
           <div className="text-sm space-y-2">
-            <p className="font-medium text-slate-200">Encryption at Rest</p>
+            <p className="font-medium text-fcc-cream">Encryption at Rest</p>
             <ul className="ml-4 list-inside list-disc space-y-1">
               <li>AES-256 encryption for all stored data</li>
               <li>Encrypted database volumes and backups</li>
@@ -28,7 +28,7 @@ export const SecurityPolicyContent = () => {
               <li>Separate encryption keys per customer tenant</li>
             </ul>
 
-            <p className="pt-2 font-medium text-slate-200">Encryption in Transit</p>
+            <p className="pt-2 font-medium text-fcc-cream">Encryption in Transit</p>
             <ul className="ml-4 list-inside list-disc space-y-1">
               <li>TLS 1.3 for all data transmission</li>
               <li>Perfect Forward Secrecy (PFS) enabled</li>
@@ -54,7 +54,7 @@ export const SecurityPolicyContent = () => {
 
         <PolicyItem icon={Database} title="3. Infrastructure Security">
           <div className="text-sm space-y-2">
-            <p className="font-medium text-slate-200">Cloud Architecture</p>
+            <p className="font-medium text-fcc-cream">Cloud Architecture</p>
             <ul className="ml-4 list-inside list-disc space-y-1">
               <li>Dedicated VPC with subnet isolation</li>
               <li>Private networking between services</li>
@@ -62,7 +62,7 @@ export const SecurityPolicyContent = () => {
               <li>Immutable infrastructure deployments</li>
             </ul>
 
-            <p className="pt-2 font-medium text-slate-200">Monitoring & Logging</p>
+            <p className="pt-2 font-medium text-fcc-cream">Monitoring & Logging</p>
             <ul className="ml-4 list-inside list-disc space-y-1">
               <li>24/7 infrastructure monitoring with automated alerts</li>
               <li>Centralized logging with anomaly detection</li>
@@ -107,10 +107,10 @@ export const SecurityPolicyContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">7. Responsible Disclosure</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">7. Responsible Disclosure</h3>
         <p className="text-sm leading-relaxed">
           We encourage ethical security researchers to report vulnerabilities responsibly. Email{" "}
-          <a href="mailto:security@daywinlabs.com" className="text-blue-400 hover:text-blue-300">
+          <a href="mailto:security@daywinlabs.com" className="text-fcc-accent hover:text-fcc-accent">
             security@daywinlabs.com
           </a>{" "}
           with details, steps to reproduce, and proof of concept. We commit to acknowledging receipt within 48 hours.
@@ -118,7 +118,7 @@ export const SecurityPolicyContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">8. Business Continuity</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">8. Business Continuity</h3>
         <ul className="ml-4 list-inside list-disc space-y-1 text-sm">
           <li>Daily encrypted backups stored in geo-redundant locations</li>
           <li>Disaster recovery drill at least twice per year</li>
@@ -128,10 +128,10 @@ export const SecurityPolicyContent = () => {
       </section>
 
       <section className="space-y-3">
-        <h3 className="text-lg font-semibold text-slate-100">9. Contact</h3>
+        <h3 className="text-lg font-semibold text-fcc-cream">9. Contact</h3>
         <p className="text-sm leading-relaxed">
           Have questions about our security practices? Email{" "}
-          <a href="mailto:sayeem@daywinlabs.com" className="text-blue-400 hover:text-blue-300">
+          <a href="mailto:sayeem@daywinlabs.com" className="text-fcc-accent hover:text-fcc-accent">
             sayeem@daywinlabs.com
           </a>{" "}
           and we'll connect you with our security team.
@@ -148,12 +148,12 @@ interface PolicyItemProps {
 }
 
 const PolicyItem = ({ icon: Icon, title, children }: PolicyItemProps) => (
-  <div className="flex items-start gap-3 rounded-2xl border border-slate-800/60 bg-slate-900/50 p-4 shadow-inner shadow-slate-950/40">
-    <div className="mt-1 rounded-lg bg-blue-500/10 p-2">
-      <Icon className="h-5 w-5 text-blue-400" />
+  <div className="flex items-start gap-3 border border-fcc-border bg-fcc-black p-4 shadow-fcc-dark">
+    <div className="mt-1 border border-fcc-border bg-fcc-panel p-2">
+      <Icon className="h-5 w-5 text-fcc-accent" />
     </div>
     <div className="flex-1 space-y-2">
-      <h3 className="text-lg font-semibold text-slate-100">{title}</h3>
+      <h3 className="text-lg font-semibold text-fcc-cream">{title}</h3>
       {children}
     </div>
   </div>
