@@ -53,7 +53,7 @@ export const SiteHeader = () => {
           </a>
           <a
             href="/contact"
-            className="inline-flex rounded border border-fcc-accent bg-fcc-accent px-5 py-1.5 font-semibold text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fcc-accent focus-visible:ring-offset-2 focus-visible:ring-offset-fcc-black"
+            className="hidden rounded border border-fcc-accent bg-fcc-accent px-5 py-1.5 font-semibold text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fcc-accent focus-visible:ring-offset-2 focus-visible:ring-offset-fcc-black md:inline-flex"
           >
             Book a Live AI CFO Audit
           </a>
