@@ -1,0 +1,21 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "daywinlabs.com"
+        }
+      ],
+      "destination": "https://www.daywinlabs.com/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(privacy|terms|security|contact)",
+      "destination": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-fcc-black text-fcc-cream antialiased;
+  font-family: 'Space Grotesk', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background-color: #CDDFFF;
+  color: #000000;
+}
+
+a {
+  @apply text-fcc-cream;
+}
+
+.video-hero-demo::-webkit-media-controls-mute-button,
+.video-hero-demo::-webkit-media-controls-volume-slider,
+.video-hero-demo::-webkit-media-controls-volume-control-container {
+  display: none !important;
+}
+
+.video-hero-demo::-moz-media-controls-volume-slider {
+  display: none !important;
+}
+
+
+
+@layer base {
+  :root {
+    /* Your existing color palette converted to HSL */
+    --background: 0 0% 0%; /* #000000 - fcc-black */
+    --foreground: 49.2 9.8% 96.1%; /* #F6F5EF - fcc-cream (converted to HSL) */
+    --card: 20 0% 10%; /* #1A1A1A - fcc-panel (converted to HSL) */
+    --card-foreground: 0 0% 100%; /* White to contrast with dark card */
+    --popover: 20 0% 10%; /* #1A1A1A - fcc-panel */
+    --popover-foreground: 0 0% 100%; /* White to contrast with dark popover */
+    --primary: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --primary-foreground: 0 0% 0%; /* #000000 - contrasting with primary */
+    --secondary: 49.2 9.8% 96.1%; /* #F6F5EF - fcc-secondary */
+    --secondary-foreground: 0 0% 0%; /* #000000 - contrasting with secondary */
+    --muted: 210 0% 20%; /* #333333 - fcc-muted converted to HSL */
+    --muted-foreground: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --accent: 210 0% 20%; /* #333333 - fcc-border */
+    --accent-foreground: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --destructive: 0 77.4% 65.1%; /* #EF4444 - using red from your palette */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF - white */
+    --border: 210 0% 20%; /* #333333 - fcc-border */
+    --input: 20 0% 10%; /* #1A1A1A - fcc-panel */
+    --ring: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --chart-1: 216 100% 90.2%; /* #CDDFFF - fcc-chart-1 */
+    --chart-2: 49.2 9.8% 96.1%; /* #F6F5EF - fcc-chart-2 */
+    --chart-3: 0 0% 0%; /* #000000 - fcc-chart-3 */
+    --chart-4: 0 0% 66.7%; /* #AAAAAA - fcc-chart-4 */
+    --chart-5: 0 0% 80%; /* #CCCCCC - fcc-chart-5 */
+    --radius: 0.5rem; /* Default radius */
+  }
+  .dark {
+    /* In dark mode, keep the same values as light mode for consistency */
+    --background: 0 0% 0%; /* #000000 - fcc-black */
+    --foreground: 49.2 9.8% 96.1%; /* #F6F5EF - fcc-cream */
+    --card: 20 0% 10%; /* #1A1A1A - fcc-panel */
+    --card-foreground: 0 0% 100%; /* White */
+    --popover: 20 0% 10%; /* #1A1A1A - fcc-panel */
+    --popover-foreground: 0 0% 100%; /* White */
+    --primary: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --primary-foreground: 0 0% 0%; /* #000000 */
+    --secondary: 49.2 9.8% 96.1%; /* #F6F5EF - fcc-secondary */
+    --secondary-foreground: 0 0% 0%; /* #000000 */
+    --muted: 210 0% 20%; /* #333333 - fcc-muted */
+    --muted-foreground: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --accent: 210 0% 20%; /* #333333 - fcc-border */
+    --accent-foreground: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --destructive: 0 77.4% 65.1%; /* #EF4444 */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    --border: 210 0% 20%; /* #333333 - fcc-border */
+    --input: 20 0% 10%; /* #1A1A1A - fcc-panel */
+    --ring: 216 100% 90.2%; /* #CDDFFF - fcc-accent */
+    --chart-1: 216 100% 90.2%; /* #CDDFFF */
+    --chart-2: 49.2 9.8% 96.1%; /* #F6F5EF */
+    --chart-3: 0 0% 0%; /* #000000 */
+    --chart-4: 0 0% 66.7%; /* #AAAAAA */
+    --chart-5: 0 0% 80%; /* #CCCCCC */
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
