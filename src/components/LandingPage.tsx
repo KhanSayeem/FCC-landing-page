@@ -499,7 +499,7 @@ export const LandingPage = () => {
             <div className="space-y-6">
               <div>
                 <p className="text-[11px] uppercase tracking-[0.35em] text-fcc-accent">Pilot Program</p>
-                <h2 className="mt-3 text-3xl font-semibold text-fcc-cream">Launch your AI CFO in 30 days for $999.</h2>
+                <h2 className="mt-3 text-3xl font-semibold text-fcc-cream">Launch your AI CFO in 30 days for $999/mo.</h2>
                 <p className="mt-3 text-sm text-fcc-muted">30-day pilot, refund guarantee, zero lock-in. FCC handles everything from audit to live workflows.</p>
               </div>
               <ul className="space-y-3 text-sm text-fcc-cream">
@@ -515,7 +515,7 @@ export const LandingPage = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-fcc-gray">Pilot pricing</p>
-                  <p className="mt-1 text-3xl font-semibold text-fcc-cream">$999 one-time</p>
+                  <p className="mt-1 text-3xl font-semibold text-fcc-cream">$999/mo</p>
                 </div>
                 <span className="rounded border border-fcc-accent px-3 py-1 text-[11px] uppercase tracking-[0.3em] text-fcc-black bg-fcc-accent">3 seats left</span>
               </div>
@@ -594,15 +594,6 @@ export const LandingPage = () => {
             </div>
           </div>
         </section>
-      </div>
-
-      <div className="fixed bottom-4 left-0 right-0 z-40 flex justify-center px-4 md:hidden">
-        <a
-          href="/contact"
-          className="flex-1 rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
-        >
-          Book a Live AI CFO Audit
-        </a>
       </div>
 
       <VideoModal open={isVideoOpen} onOpenChange={setIsVideoOpen} />
