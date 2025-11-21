@@ -55,7 +55,7 @@ export const SiteHeader = () => {
             href="/contact"
             className="hidden rounded border border-fcc-accent bg-fcc-accent px-5 py-1.5 font-semibold text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fcc-accent focus-visible:ring-offset-2 focus-visible:ring-offset-fcc-black md:inline-flex"
           >
-            Book a Live AI CFO Audit
+            BOOK A DEMO
           </a>
           <button
             type="button"
@@ -89,7 +89,7 @@ export const SiteHeader = () => {
               className="rounded border border-fcc-accent bg-fcc-accent px-3 py-2 text-center font-semibold text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
               onClick={handleLinkClick}
             >
-              Book a Live AI CFO Audit
+              BOOK A DEMO
             </a>
             <a
               href="/contact"

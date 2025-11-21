@@ -1,11 +1,6 @@
 import React from "react";
 
-const footerLinks = [
-  { href: "#why", label: "Why FCC" },
-  { href: "#how", label: "How It Works" },
-  { href: "#security", label: "Security" },
-  { href: "#pilot", label: "Pilot" },
-];
+const footerLinks: { href: string; label: string }[] = [];
 
 const policyLinks = [
   { href: "/privacy", label: "Privacy" },
@@ -35,16 +30,18 @@ export const SiteFooter = () => {
         </div>
 
         <div className="flex flex-col items-start gap-2 text-[11px] text-fcc-gray md:items-end">
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.map((link) => {
-              const href = link.href.startsWith("#") ? `/${link.href}` : link.href;
-              return (
-                <a key={link.href} href={href} className="border border-fcc-border px-2 py-1 text-fcc-cream transition hover:border-fcc-accent hover:text-fcc-accent">
-                  {link.label}
-                </a>
-              );
-            })}
-          </div>
+          {footerLinks.length > 0 && (
+            <div className="flex flex-wrap gap-2">
+              {footerLinks.map((link) => {
+                const href = link.href.startsWith("#") ? `/${link.href}` : link.href;
+                return (
+                  <a key={link.href} href={href} className="border border-fcc-border px-2 py-1 text-fcc-cream transition hover:border-fcc-accent hover:text-fcc-accent">
+                    {link.label}
+                  </a>
+                );
+              })}
+            </div>
+          )}
           <div className="flex flex-wrap gap-2">
             {policyLinks.map((link) => (
               <a key={link.href} href={link.href} className="border border-fcc-border px-2 py-1 text-fcc-cream transition hover:border-fcc-accent hover:text-fcc-accent">

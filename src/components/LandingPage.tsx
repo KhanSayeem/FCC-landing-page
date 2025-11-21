@@ -108,7 +108,7 @@ const walkthroughSections = [
 const timelineSteps = [
   {
     label: "Ask",
-    title: '"Can we hire three more AEs in May?"',
+    title: '"Can we add 3 sellers and stay on plan?"',
     description: "Type plain English and pull cash, burn, and ARR live.",
     icon: MessageSquare,
   },
@@ -127,9 +127,9 @@ const timelineSteps = [
 ];
 
 const automationReports = [
-  { title: "Audit", icon: BarChart, body: "Daily pulse drops runway, burn swing, and what changed." },
-  { title: "Compliance", icon: ShieldCheck, body: "Vendor spike? FCC tags the owner, risk, and next fix." },
-  { title: "Automation", icon: ScrollText, body: "Weekly board packet auto-building with charts and live links." },
+  { title: "Audit", icon: BarChart, body: "Daily alert: runway, burn moves, and key changes." },
+  { title: "Compliance", icon: ShieldCheck, body: "Vendor costs jump? FCC points to the owner, the risk, and the fix." },
+  { title: "Automation", icon: ScrollText, body: "Every week, the board pack auto-assembles with charts and live links." },
 ];
 
 const testimonialCards = [
@@ -193,7 +193,7 @@ export const LandingPage = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
-    <PageShell className="pt-32 pb-24">
+    <PageShell className="pt-24 pb-24">
       <div className="space-y-24 bg-fcc-black">
         <section id="hero" className="-mt-12 px-3 sm:px-5">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl bg-gradient-to-br from-fcc-black via-fcc-black/80 to-fcc-panel/80 p-8 shadow-[0_30px_120px_rgba(0,0,0,0.6)] lg:p-14">
@@ -212,7 +212,7 @@ export const LandingPage = () => {
                     href="/contact"
                     className="group inline-flex items-center justify-center gap-2 rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fcc-accent focus-visible:ring-offset-2 focus-visible:ring-offset-fcc-black"
                   >
-                    Book a Live AI CFO Audit
+                    BOOK A DEMO
                     <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                   </a>
                   <button
@@ -221,7 +221,7 @@ export const LandingPage = () => {
                     onClick={() => setIsVideoOpen(true)}
                   >
                     <PlayCircle className="h-4 w-4" />
-                    Watch the 2-min Pilot Tour
+                    WATCH FCC IN ACTION
                   </button>
                 </div>
 
@@ -240,7 +240,7 @@ export const LandingPage = () => {
                   <img src="/FCC_Overview.png" alt="Financial Command Center cockpit" className="h-full w-full rounded-lg object-cover shadow-[0_24px_120px_rgba(0,0,0,0.55)]" />
                   <p className="text-center text-[11px] uppercase tracking-[0.35em] text-fcc-accent">AI powered Financial Automation</p>
                 </div>
-                <div className="rounded-xl bg-fcc-black/70 p-3 shadow-fcc-accent">
+                <div>
                   <div className="overflow-hidden rounded-xl">
                     <video className="h-full w-full object-cover" autoPlay loop muted playsInline poster="/FCC_AI_Assistant_Chat.png">
                       <source src="/10.mp4" type="video/mp4" />
@@ -282,7 +282,7 @@ export const LandingPage = () => {
             </div>
 
             <div className="grid gap-4 lg:grid-cols-2">
-              <div className="rounded-2xl bg-fcc-black/70 p-6 shadow-fcc-accent animate-in fade-in-50">
+              <div className="p-6 animate-in fade-in-50">
                 <p className="text-xs uppercase tracking-[0.3em] text-fcc-accent">Problem</p>
                 <h3 className="mt-3 text-2xl font-semibold text-fcc-cream">What blocks finance today</h3>
                 <ul className="mt-6 space-y-3">
@@ -297,7 +297,7 @@ export const LandingPage = () => {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-2xl bg-fcc-black/70 p-6 shadow-fcc-accent animate-in fade-in-50" style={{ animationDelay: "0.15s" }}>
+              <div className="p-6 animate-in fade-in-50" style={{ animationDelay: "0.15s" }}>
                 <p className="text-xs uppercase tracking-[0.3em] text-fcc-accent">Solve</p>
                 <h3 className="mt-3 text-2xl font-semibold text-fcc-cream">Our solution</h3>
                 <p className="mt-3 text-sm text-fcc-muted">One platform for your financial ecosystem.</p>
@@ -328,16 +328,14 @@ export const LandingPage = () => {
                 className="grid items-center gap-8 rounded-2xl bg-fcc-black/60 p-6 shadow-[0_12px_60px_rgba(0,0,0,0.45)] transition hover:border-fcc-accent hover:-translate-y-1 animate-in fade-in-50"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <div className="rounded-2xl bg-fcc-black/70 p-3 shadow-fcc-accent">
-                  <div className="overflow-hidden rounded-xl">
-                    {section.media.type === "video" ? (
-                      <video className="h-full w-full object-cover" autoPlay loop muted playsInline poster={section.media.poster} preload="metadata">
-                        <source src={section.media.src} type="video/mp4" />
-                      </video>
-                    ) : (
-                      <img src={section.media.src} alt={section.media.alt} className="h-full w-full object-cover" loading="lazy" />
-                    )}
-                  </div>
+                <div className="overflow-hidden rounded-xl">
+                  {section.media.type === "video" ? (
+                    <video className="h-full w-full object-cover" autoPlay loop muted playsInline poster={section.media.poster} preload="metadata">
+                      <source src={section.media.src} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img src={section.media.src} alt={section.media.alt} className="h-full w-full object-cover" loading="lazy" />
+                  )}
                 </div>
                 <div className="space-y-4">
                   <p className="text-xs uppercase tracking-[0.3em] text-fcc-gray">0{index + 1}</p>
@@ -409,7 +407,7 @@ export const LandingPage = () => {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
               >
-                Book a Live AI CFO Audit
+                BOOK A DEMO
               </a>
               <a
                 href="/contact"
@@ -433,7 +431,7 @@ export const LandingPage = () => {
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
               >
-                Book a Live AI CFO Audit
+                BOOK A DEMO
               </a>
             </div>
             <div className="flex gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible">
@@ -528,7 +526,7 @@ export const LandingPage = () => {
                   href="/contact"
                   className="inline-flex w-full items-center justify-center rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
                 >
-                  Book a Live AI CFO Audit
+                  BOOK A DEMO
                 </a>
                 <a
                   href="/contact"
@@ -568,7 +566,7 @@ export const LandingPage = () => {
                   href="/contact"
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded border border-fcc-accent bg-fcc-accent px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-fcc-black transition hover:border-fcc-cream hover:bg-fcc-cream"
                 >
-                  Book a Live AI CFO Audit
+                  BOOK A DEMO
                 </a>
                 <a
                   href="mailto:sayeem@daywinlabs.com"
