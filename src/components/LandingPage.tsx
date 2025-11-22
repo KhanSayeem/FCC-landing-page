@@ -359,7 +359,7 @@ export const LandingPage = () => {
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-[11px] uppercase tracking-[0.35em] text-fcc-accent">Automation + Board-Level Answers</p>
             <h2 className="mt-3 text-3xl font-semibold text-fcc-cream">Ask → Analyze → Recommend</h2>
-            <p className="mt-3 text-sm text-fcc-muted">FCC handles the grunt work so your board, exec team, and finance org see the same truth.</p>
+            <p className="mt-3 text-sm text-fcc-muted">FCC links your entire finance stack and delivers instant answers on demand</p>
           </div>
 
           <div className="mx-auto max-w-5xl">
