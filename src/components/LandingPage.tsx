@@ -543,7 +543,7 @@ export const LandingPage = () => {
           <div className="mx-auto max-w-6xl grid gap-6 rounded-2xl bg-fcc-panel/40 p-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="mx-auto w-full max-w-sm lg:ml-0">
               <div className="overflow-hidden rounded-2xl bg-fcc-black/60">
-                <img src="/Profile_Picture.png" alt="Sayeem Khan headshot" className="h-full w-full object-cover" />
+                <img src="/Profile_Picture.jpg" alt="Sayeem Khan headshot" className="h-full w-full object-cover" />
               </div>
             </div>
             <div className="space-y-5">
